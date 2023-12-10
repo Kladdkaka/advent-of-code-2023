@@ -36,7 +36,7 @@ def parse_calibration_value(s: str) -> int:
   return int(calibration_value)
 
 if __name__ == "__main__":
-  p = Path(__file__).parent / 'input'
+  p = Path(__file__).parent / 'input.txt'
   lines = p.read_text().splitlines()
   
   print(sum(parse_calibration_value(line) for line in lines))
